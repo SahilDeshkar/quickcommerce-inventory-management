@@ -1,0 +1,201 @@
+name,quantity,unit,category,orderDate,replenishmentTime
+Toothpaste,12,tubes,Personal Care,2024-12-25,12
+Cereal,12,packs,Grocery,2025-01-11,9
+Beans,8,packs,Grocery,2024-12-13,7
+Tofu,13,packs,Protein,2025-02-06,10
+Laundry Detergent,13,bottles,Cleaning,2024-12-16,13
+Salt,11,packs,Grocery,2025-03-06,7
+Deodorant,13,packs,Personal Care,2025-01-17,14
+Beans,13,grams,Grocery,2025-01-10,10
+Orange,0,packs,Fresh Produce,2025-02-24,7
+Lentils,25,packs,Grocery,2025-01-28,17
+Flour,10,packs,Grocery,2024-12-11,14
+Orange,14,bunches,Fresh Produce,2025-01-30,3
+Hand Sanitizer,13,boxes,Cleaning,2025-02-13,18
+Face Wash,12,bars,Personal Care,2025-02-28,19
+Deodorant,12,bars,Personal Care,2025-03-03,15
+Deodorant,9,bottles,Personal Care,2025-02-07,11
+Soap,13,bottles,Personal Care,2024-12-29,11
+Coffee,21,liters,Beverages,2025-01-16,13
+Tofu,7,grams,Protein,2025-01-01,9
+Laundry Detergent,6,bottles,Cleaning,2025-01-09,11
+Moisturizer,20,bottles,Personal Care,2024-12-18,13
+Garlic,14,grams,Fresh Produce,2025-01-11,2
+Flour,12,packs,Grocery,2025-01-09,18
+Shaving Cream,18,packs,Personal Care,2025-02-02,10
+Toothpaste,18,bottles,Personal Care,2025-01-06,14
+Face Wash,16,bottles,Personal Care,2025-01-21,11
+Flour,14,boxes,Grocery,2025-03-05,12
+Tofu,12,kilograms,Protein,2024-12-24,9
+Potatoes,16,grams,Fresh Produce,2025-02-12,3
+Sugar,0,boxes,Grocery,2025-01-22,12
+Pasta,22,boxes,Grocery,2025-02-04,19
+Toothpaste,15,bars,Personal Care,2025-02-17,19
+Dish Soap,0,packs,Cleaning,2025-01-05,11
+Olive Oil,18,bottles,Beverages,2025-02-10,15
+Sugar,25,grams,Grocery,2025-01-23,17
+Cheese,16,packs,Dairy,2025-02-20,5
+Toothpaste,0,bottles,Personal Care,2024-12-25,13
+Rice,9,packs,Grocery,2025-01-07,14
+Coffee,13,cans,Beverages,2025-02-27,10
+Face Wash,13,packs,Personal Care,2025-01-16,19
+Orange,0,bunches,Fresh Produce,2025-01-17,2
+Spinach,18,bunches,Fresh Produce,2024-12-09,5
+Orange,27,bunches,Fresh Produce,2025-02-13,7
+Dish Soap,13,cans,Cleaning,2025-02-25,20
+Apple,23,kilograms,Fresh Produce,2025-01-08,6
+Laundry Detergent,0,cans,Cleaning,2025-03-05,14
+Chicken,12,kilograms,Protein,2025-02-10,4
+Toilet Paper,12,packs,Cleaning,2025-01-27,17
+Butter,17,liters,Dairy,2025-01-27,8
+Pasta,15,boxes,Grocery,2025-03-07,9
+Dish Soap,13,boxes,Cleaning,2025-01-01,15
+Apple,19,kilograms,Fresh Produce,2025-01-23,3
+Chicken,11,grams,Protein,2025-03-02,10
+Olive Oil,0,cans,Beverages,2025-03-07,11
+Sugar,0,grams,Grocery,2024-12-22,17
+Tea,20,cans,Beverages,2025-03-01,13
+Hand Sanitizer,9,boxes,Cleaning,2025-02-02,12
+Banana,19,bunches,Fresh Produce,2024-12-21,5
+Hand Sanitizer,14,boxes,Cleaning,2024-12-09,11
+Butter,12,liters,Dairy,2025-02-07,9
+Tea,11,liters,Beverages,2025-02-20,4
+Milk,13,liters,Dairy,2024-12-12,8
+Sugar,19,grams,Grocery,2024-12-23,19
+Onions,21,grams,Fresh Produce,2025-02-06,5
+Carrots,25,grams,Fresh Produce,2024-12-15,4
+Hand Sanitizer,0,packs,Cleaning,2025-01-22,12
+Tomatoes,25,bunches,Fresh Produce,2025-02-19,4
+Salt,17,kilograms,Grocery,2024-12-28,14
+Garlic,21,grams,Fresh Produce,2025-02-15,6
+Chicken,9,packs,Protein,2025-01-09,4
+Flour,21,boxes,Grocery,2025-01-11,19
+Lentils,5,kilograms,Grocery,2024-12-31,12
+Shampoo,14,bottles,Personal Care,2025-01-21,10
+Apple,30,kilograms,Fresh Produce,2024-12-30,4
+Cereal,0,kilograms,Grocery,2024-12-31,19
+Spinach,16,grams,Fresh Produce,2025-01-25,3
+Soap,14,tubes,Personal Care,2024-12-28,12
+Shaving Cream,10,tubes,Personal Care,2025-01-21,14
+Pasta,7,packs,Grocery,2025-02-24,20
+Cereal,16,kilograms,Grocery,2024-12-16,12
+Carrots,22,kilograms,Fresh Produce,2025-03-04,4
+Rice,0,grams,Grocery,2024-12-09,7
+Banana,0,bunches,Fresh Produce,2025-02-12,7
+Rice,11,kilograms,Grocery,2024-12-26,18
+Chicken,5,packs,Protein,2024-12-08,5
+Apple,22,bunches,Fresh Produce,2025-02-24,2
+Beans,17,boxes,Grocery,2025-01-03,14
+Cereal,0,kilograms,Grocery,2025-01-13,19
+Tofu,11,kilograms,Protein,2025-01-28,9
+Milk,16,packs,Dairy,2025-02-10,6
+Tea,16,bottles,Beverages,2025-01-17,5
+Beans,12,packs,Grocery,2025-02-09,17
+Tofu,10,kilograms,Protein,2025-02-13,9
+Toothpaste,17,bars,Personal Care,2024-12-14,18
+Carrots,23,bunches,Fresh Produce,2024-12-22,4
+Coffee,26,liters,Beverages,2024-12-26,8
+Coffee,16,bottles,Beverages,2025-01-26,9
+Yogurt,15,packs,Dairy,2025-01-18,5
+Cereal,13,boxes,Grocery,2025-01-07,8
+Onions,22,bunches,Fresh Produce,2025-01-28,7
+Yogurt,11,liters,Dairy,2025-01-26,5
+Olive Oil,15,bottles,Beverages,2025-02-10,15
+Carrots,28,packs,Fresh Produce,2025-03-05,4
+Soap,11,bottles,Personal Care,2025-01-08,10
+Moisturizer,13,bars,Personal Care,2024-12-11,14
+Butter,13,cartons,Dairy,2025-02-10,3
+Garlic,8,grams,Fresh Produce,2025-01-31,5
+Tea,13,liters,Beverages,2025-02-01,7
+Milk,17,liters,Dairy,2025-01-08,6
+Shaving Cream,13,bars,Personal Care,2025-02-20,15
+Sugar,15,grams,Grocery,2024-12-21,18
+Orange,19,kilograms,Fresh Produce,2024-12-26,2
+Banana,18,kilograms,Fresh Produce,2024-12-29,6
+Chicken,11,packs,Protein,2025-03-04,6
+Pasta,7,grams,Grocery,2025-02-11,10
+Spinach,16,grams,Fresh Produce,2025-02-20,2
+Fish,11,grams,Protein,2025-01-10,5
+Apple,20,packs,Fresh Produce,2024-12-23,5
+Beans,9,boxes,Grocery,2024-12-13,17
+Coffee,17,liters,Beverages,2024-12-21,14
+Lentils,18,kilograms,Grocery,2024-12-29,15
+Beans,15,packs,Grocery,2025-02-07,20
+Tomatoes,25,kilograms,Fresh Produce,2025-01-25,7
+Shaving Cream,14,packs,Personal Care,2025-01-06,20
+Apple,20,kilograms,Fresh Produce,2025-02-26,7
+Dish Soap,4,boxes,Cleaning,2025-02-05,12
+Shrimp,13,kilograms,Protein,2025-01-21,10
+Laundry Detergent,8,boxes,Cleaning,2025-01-12,12
+Olive Oil,0,bottles,Beverages,2024-12-24,10
+Apple,17,grams,Fresh Produce,2025-03-02,7
+Potatoes,19,bunches,Fresh Produce,2025-03-06,4
+Yogurt,16,packs,Dairy,2024-12-20,8
+Face Wash,20,bars,Personal Care,2025-02-01,19
+Onions,25,packs,Fresh Produce,2025-02-17,7
+Sugar,20,kilograms,Grocery,2024-12-14,11
+Toilet Paper,9,cans,Cleaning,2025-02-15,13
+Cereal,18,grams,Grocery,2025-02-06,9
+Chicken,7,grams,Protein,2025-01-18,10
+Beans,16,boxes,Grocery,2025-02-07,10
+Flour,15,boxes,Grocery,2025-01-26,10
+Olive Oil,17,liters,Beverages,2025-02-11,7
+Deodorant,18,bottles,Personal Care,2024-12-16,19
+Salt,22,boxes,Grocery,2025-01-31,13
+Tofu,0,grams,Protein,2025-02-12,6
+Fish,0,kilograms,Protein,2025-03-07,7
+Orange,17,grams,Fresh Produce,2025-01-07,6
+Face Wash,11,packs,Personal Care,2024-12-18,17
+Sugar,23,boxes,Grocery,2025-02-20,11
+Shampoo,12,tubes,Personal Care,2025-01-23,14
+Onions,22,kilograms,Fresh Produce,2024-12-26,4
+Cheese,11,cartons,Dairy,2025-02-12,6
+Cheese,14,packs,Dairy,2025-02-03,3
+Soap,15,packs,Personal Care,2025-02-26,11
+Cheese,0,liters,Dairy,2025-01-29,9
+Lentils,11,packs,Grocery,2025-01-12,11
+Yogurt,10,packs,Dairy,2024-12-13,5
+Dish Soap,7,packs,Cleaning,2024-12-09,15
+Apple,14,grams,Fresh Produce,2025-02-12,7
+Shaving Cream,16,tubes,Personal Care,2025-01-12,13
+Apple,15,kilograms,Fresh Produce,2025-02-04,7
+Apple,15,packs,Fresh Produce,2025-03-07,4
+Soap,11,bottles,Personal Care,2025-03-07,20
+Banana,25,grams,Fresh Produce,2025-03-06,4
+Deodorant,17,bottles,Personal Care,2025-01-27,10
+Eggs,13,liters,Dairy,2025-01-21,8
+Toothpaste,12,bars,Personal Care,2025-03-07,18
+Olive Oil,18,cans,Beverages,2025-02-12,7
+Laundry Detergent,9,cans,Cleaning,2025-02-20,20
+Coffee,17,bottles,Beverages,2025-03-07,9
+Deodorant,11,bottles,Personal Care,2025-01-30,19
+Apple,25,grams,Fresh Produce,2025-02-28,7
+Toilet Paper,8,packs,Cleaning,2025-02-11,15
+Rice,10,packs,Grocery,2025-02-23,12
+Moisturizer,9,bottles,Personal Care,2025-02-17,18
+Lentils,13,packs,Grocery,2025-02-28,13
+Dish Soap,15,bottles,Cleaning,2024-12-30,13
+Laundry Detergent,13,boxes,Cleaning,2024-12-28,10
+Orange,24,grams,Fresh Produce,2025-01-22,6
+Shrimp,12,grams,Protein,2024-12-12,8
+Yogurt,14,cartons,Dairy,2024-12-12,10
+Yogurt,13,cartons,Dairy,2025-01-12,8
+Cereal,0,grams,Grocery,2024-12-19,9
+Cheese,18,cartons,Dairy,2024-12-29,6
+Potatoes,12,bunches,Fresh Produce,2024-12-25,6
+Sugar,25,kilograms,Grocery,2025-03-05,15
+Spinach,21,packs,Fresh Produce,2024-12-18,5
+Dish Soap,10,packs,Cleaning,2025-01-01,14
+Coffee,17,liters,Beverages,2025-01-02,8
+Tofu,10,kilograms,Protein,2024-12-28,6
+Chicken,12,grams,Protein,2025-01-10,10
+Banana,20,grams,Fresh Produce,2025-01-11,3
+Toilet Paper,9,boxes,Cleaning,2024-12-14,19
+Chicken,11,kilograms,Protein,2024-12-09,9
+Moisturizer,15,bottles,Personal Care,2024-12-23,15
+Deodorant,13,packs,Personal Care,2024-12-30,15
+Flour,12,kilograms,Grocery,2025-02-27,20
+Rice,9,grams,Grocery,2025-01-23,14
+Shampoo,11,bars,Personal Care,2025-02-01,16
+Fish,8,packs,Protein,2024-12-13,4
+Coffee,13,liters,Beverages,2025-02-18,13

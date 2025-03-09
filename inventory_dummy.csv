@@ -1,0 +1,501 @@
+name,quantity,unit,category
+Tofu,31,tubes,Grocery
+Tofu,34,bars,Beverages
+Potatoes,27,cartons,Personal Care
+Apple,13,liters,Frozen
+Olive Oil,46,grams,Personal Care
+Tea,30,boxes,Frozen
+Carrots,2,packs,Cleaning
+Face Wash,11,cans,Dairy
+Garlic,49,kilograms,Cleaning
+Yogurt,27,kilograms,Personal Care
+Shaving Cream,18,cartons,Grocery
+Milk,39,bars,Beverages
+Toothpaste,17,bottles,Dairy
+Spinach,5,tubes,Beverages
+Soap,47,boxes,Frozen
+Shaving Cream,20,packs,Frozen
+Toilet Paper,6,bars,Cleaning
+Fish,47,liters,Cleaning
+Moisturizer,1,cans,Dairy
+Olive Oil,8,tubes,Personal Care
+Bread,38,bottles,Dairy
+Cheese,44,liters,Fresh Produce
+Pasta,22,liters,Fresh Produce
+Chicken,9,packs,Personal Care
+Lentils,27,grams,Dairy
+Flour,32,cartons,Frozen
+Banana,1,bottles,Dairy
+Milk,26,bottles,Grocery
+Tea,2,boxes,Beverages
+Shrimp,44,grams,Fresh Produce
+Fish,19,boxes,Personal Care
+Lentils,24,packs,Frozen
+Spinach,13,boxes,Fresh Produce
+Apple,31,liters,Personal Care
+Cereal,48,tubes,Beverages
+Milk,47,liters,Fresh Produce
+Fish,5,tubes,Grocery
+Orange,20,bottles,Fresh Produce
+Rice,32,packs,Frozen
+Toothpaste,48,cartons,Cleaning
+Salt,39,packs,Fresh Produce
+Beans,38,cans,Fresh Produce
+Coffee,46,boxes,Cleaning
+Toothpaste,2,cartons,Dairy
+Toilet Paper,7,boxes,Dairy
+Apple,17,boxes,Personal Care
+Tomatoes,11,cartons,Frozen
+Tofu,49,packs,Grocery
+Dish Soap,38,grams,Grocery
+Rice,8,boxes,Dairy
+Face Wash,20,kilograms,Frozen
+Hand Sanitizer,48,kilograms,Fresh Produce
+Face Wash,44,packs,Beverages
+Rice,17,bottles,Dairy
+Pasta,19,grams,Frozen
+Coffee,42,boxes,Personal Care
+Tofu,1,grams,Grocery
+Spinach,37,bars,Beverages
+Rice,42,cartons,Personal Care
+Lentils,2,cartons,Cleaning
+Cereal,30,bars,Frozen
+Potatoes,33,grams,Grocery
+Chicken,50,grams,Fresh Produce
+Chicken,16,tubes,Fresh Produce
+Orange,22,kilograms,Frozen
+Sugar,44,grams,Dairy
+Tofu,14,packs,Fresh Produce
+Sugar,23,cartons,Frozen
+Soap,2,cartons,Personal Care
+Tofu,19,packs,Grocery
+Fish,22,kilograms,Fresh Produce
+Bread,16,bars,Cleaning
+Eggs,35,packs,Dairy
+Face Wash,30,grams,Fresh Produce
+Spinach,22,cans,Fresh Produce
+Coffee,38,liters,Cleaning
+Shrimp,32,cans,Personal Care
+Olive Oil,41,cans,Cleaning
+Toilet Paper,9,cartons,Dairy
+Coffee,14,bars,Fresh Produce
+Toilet Paper,30,cans,Personal Care
+Onions,16,packs,Dairy
+Shrimp,16,bottles,Cleaning
+Cereal,35,cartons,Frozen
+Onions,19,tubes,Frozen
+Butter,29,kilograms,Fresh Produce
+Chicken,28,packs,Dairy
+Carrots,6,grams,Grocery
+Chicken,32,bars,Fresh Produce
+Laundry Detergent,39,tubes,Cleaning
+Toilet Paper,23,bottles,Personal Care
+Laundry Detergent,19,tubes,Personal Care
+Salt,5,bars,Dairy
+Laundry Detergent,16,kilograms,Frozen
+Potatoes,44,tubes,Beverages
+Tofu,25,grams,Fresh Produce
+Hand Sanitizer,12,cartons,Dairy
+Spinach,21,packs,Beverages
+Beans,16,boxes,Personal Care
+Fish,22,cartons,Dairy
+Yogurt,50,liters,Cleaning
+Spinach,44,liters,Grocery
+Dish Soap,27,boxes,Cleaning
+Deodorant,47,grams,Frozen
+Laundry Detergent,15,kilograms,Grocery
+Milk,22,bottles,Dairy
+Rice,17,packs,Cleaning
+Potatoes,38,liters,Dairy
+Shrimp,17,grams,Grocery
+Pasta,21,cans,Dairy
+Coffee,26,kilograms,Fresh Produce
+Yogurt,50,kilograms,Dairy
+Apple,26,cans,Beverages
+Lentils,26,kilograms,Grocery
+Carrots,26,grams,Frozen
+Lentils,8,cans,Fresh Produce
+Tomatoes,13,tubes,Beverages
+Rice,29,bottles,Cleaning
+Rice,30,kilograms,Dairy
+Sugar,25,grams,Grocery
+Toilet Paper,31,cartons,Personal Care
+Olive Oil,48,packs,Fresh Produce
+Shrimp,45,bottles,Dairy
+Rice,34,cartons,Fresh Produce
+Face Wash,32,liters,Frozen
+Shampoo,18,bars,Frozen
+Flour,34,liters,Dairy
+Rice,29,grams,Fresh Produce
+Face Wash,32,packs,Personal Care
+Sugar,23,liters,Personal Care
+Onions,8,kilograms,Cleaning
+Salt,29,tubes,Personal Care
+Flour,26,bars,Grocery
+Spinach,1,grams,Fresh Produce
+Toothpaste,4,grams,Grocery
+Garlic,16,boxes,Frozen
+Sugar,45,grams,Beverages
+Beans,42,bottles,Dairy
+Toothpaste,2,cartons,Fresh Produce
+Flour,44,cans,Fresh Produce
+Laundry Detergent,24,kilograms,Grocery
+Chicken,40,grams,Frozen
+Milk,29,boxes,Grocery
+Onions,49,cans,Fresh Produce
+Carrots,31,boxes,Beverages
+Eggs,40,bars,Grocery
+Coffee,38,tubes,Personal Care
+Apple,22,packs,Cleaning
+Flour,15,kilograms,Frozen
+Face Wash,11,kilograms,Cleaning
+Chicken,1,grams,Beverages
+Olive Oil,48,liters,Beverages
+Hand Sanitizer,2,liters,Dairy
+Olive Oil,27,boxes,Fresh Produce
+Toothpaste,19,cans,Grocery
+Eggs,24,cans,Frozen
+Bread,49,cartons,Beverages
+Bread,36,packs,Grocery
+Yogurt,48,packs,Grocery
+Moisturizer,10,cans,Beverages
+Dish Soap,9,packs,Beverages
+Orange,7,bars,Grocery
+Face Wash,14,packs,Frozen
+Cereal,12,grams,Dairy
+Orange,4,bottles,Cleaning
+Dish Soap,36,kilograms,Frozen
+Toothpaste,43,boxes,Personal Care
+Butter,36,grams,Beverages
+Lentils,6,tubes,Grocery
+Onions,49,boxes,Frozen
+Bread,34,grams,Personal Care
+Potatoes,19,tubes,Grocery
+Onions,4,cans,Cleaning
+Apple,6,cartons,Dairy
+Garlic,21,kilograms,Grocery
+Yogurt,30,packs,Frozen
+Toothpaste,48,cartons,Fresh Produce
+Chicken,30,cans,Grocery
+Orange,39,kilograms,Cleaning
+Cheese,32,tubes,Cleaning
+Laundry Detergent,21,grams,Fresh Produce
+Hand Sanitizer,9,grams,Dairy
+Laundry Detergent,26,tubes,Grocery
+Spinach,19,cartons,Dairy
+Hand Sanitizer,32,bottles,Cleaning
+Coffee,39,tubes,Beverages
+Dish Soap,10,tubes,Fresh Produce
+Carrots,10,cans,Beverages
+Tomatoes,36,kilograms,Cleaning
+Bread,13,liters,Grocery
+Shampoo,20,liters,Frozen
+Eggs,15,bars,Frozen
+Tea,5,bottles,Frozen
+Tofu,1,grams,Personal Care
+Soap,23,boxes,Beverages
+Banana,45,tubes,Dairy
+Spinach,36,bottles,Frozen
+Cheese,43,kilograms,Personal Care
+Pasta,47,liters,Personal Care
+Potatoes,24,liters,Grocery
+Orange,20,tubes,Dairy
+Cereal,17,cans,Beverages
+Banana,6,cans,Dairy
+Banana,21,packs,Beverages
+Orange,41,packs,Personal Care
+Butter,7,cartons,Dairy
+Eggs,30,cans,Personal Care
+Face Wash,7,packs,Cleaning
+Yogurt,27,tubes,Personal Care
+Tofu,6,liters,Cleaning
+Flour,47,bottles,Grocery
+Salt,7,bottles,Cleaning
+Spinach,38,boxes,Cleaning
+Deodorant,18,packs,Fresh Produce
+Olive Oil,49,boxes,Cleaning
+Moisturizer,2,liters,Frozen
+Bread,5,tubes,Grocery
+Soap,40,bars,Beverages
+Onions,2,bottles,Beverages
+Milk,37,cartons,Personal Care
+Shampoo,7,grams,Dairy
+Potatoes,25,kilograms,Cleaning
+Eggs,27,packs,Fresh Produce
+Shaving Cream,3,bars,Dairy
+Shrimp,42,liters,Personal Care
+Shrimp,33,liters,Dairy
+Shaving Cream,22,bars,Cleaning
+Eggs,13,boxes,Dairy
+Shrimp,14,tubes,Cleaning
+Salt,21,bottles,Cleaning
+Sugar,36,tubes,Beverages
+Orange,36,grams,Beverages
+Tofu,29,boxes,Grocery
+Rice,46,liters,Beverages
+Chicken,17,bottles,Beverages
+Coffee,24,boxes,Frozen
+Beans,36,tubes,Grocery
+Bread,48,kilograms,Cleaning
+Sugar,44,bottles,Beverages
+Dish Soap,47,liters,Personal Care
+Flour,18,tubes,Personal Care
+Dish Soap,1,boxes,Fresh Produce
+Carrots,18,grams,Personal Care
+Moisturizer,46,kilograms,Cleaning
+Lentils,24,kilograms,Dairy
+Shaving Cream,46,kilograms,Frozen
+Tofu,31,tubes,Cleaning
+Milk,13,bottles,Personal Care
+Tofu,36,grams,Cleaning
+Chicken,35,bottles,Fresh Produce
+Cheese,39,cans,Beverages
+Apple,46,packs,Frozen
+Rice,40,packs,Personal Care
+Sugar,7,bottles,Frozen
+Carrots,22,packs,Fresh Produce
+Sugar,17,bottles,Dairy
+Tofu,11,cans,Dairy
+Bread,24,cans,Beverages
+Yogurt,30,boxes,Dairy
+Tofu,43,packs,Personal Care
+Potatoes,23,packs,Dairy
+Sugar,12,boxes,Grocery
+Fish,48,bars,Grocery
+Deodorant,35,bottles,Cleaning
+Lentils,39,kilograms,Cleaning
+Garlic,44,grams,Frozen
+Orange,2,cartons,Cleaning
+Orange,38,kilograms,Beverages
+Laundry Detergent,12,kilograms,Grocery
+Shampoo,9,liters,Frozen
+Face Wash,34,kilograms,Fresh Produce
+Apple,38,bars,Personal Care
+Bread,50,cartons,Fresh Produce
+Olive Oil,18,liters,Fresh Produce
+Flour,49,grams,Cleaning
+Beans,35,grams,Cleaning
+Orange,10,boxes,Fresh Produce
+Shaving Cream,33,bars,Personal Care
+Coffee,43,kilograms,Frozen
+Chicken,14,cartons,Grocery
+Lentils,28,bars,Frozen
+Sugar,34,packs,Grocery
+Rice,21,cartons,Cleaning
+Eggs,50,grams,Cleaning
+Shampoo,42,kilograms,Grocery
+Lentils,17,bars,Personal Care
+Beans,34,kilograms,Personal Care
+Cheese,17,cans,Fresh Produce
+Milk,4,tubes,Dairy
+Shaving Cream,1,tubes,Grocery
+Apple,44,tubes,Cleaning
+Tomatoes,47,packs,Grocery
+Moisturizer,49,tubes,Fresh Produce
+Milk,40,liters,Grocery
+Tofu,23,bars,Grocery
+Carrots,14,boxes,Frozen
+Cereal,32,boxes,Frozen
+Tofu,40,kilograms,Grocery
+Shampoo,1,boxes,Frozen
+Milk,21,cans,Frozen
+Chicken,25,bottles,Grocery
+Cheese,9,boxes,Grocery
+Carrots,39,tubes,Dairy
+Banana,40,tubes,Grocery
+Yogurt,25,cartons,Frozen
+Shampoo,28,boxes,Frozen
+Deodorant,33,liters,Frozen
+Shrimp,43,tubes,Dairy
+Toilet Paper,31,liters,Frozen
+Deodorant,38,cartons,Cleaning
+Moisturizer,20,cans,Grocery
+Cereal,48,cans,Fresh Produce
+Deodorant,19,liters,Dairy
+Spinach,4,packs,Frozen
+Toilet Paper,19,tubes,Fresh Produce
+Yogurt,13,packs,Fresh Produce
+Milk,21,boxes,Grocery
+Dish Soap,34,kilograms,Cleaning
+Soap,11,bottles,Cleaning
+Flour,47,boxes,Personal Care
+Tea,27,bars,Grocery
+Tea,47,tubes,Frozen
+Bread,46,grams,Fresh Produce
+Milk,1,bottles,Frozen
+Deodorant,41,liters,Dairy
+Shaving Cream,48,bars,Personal Care
+Pasta,32,tubes,Fresh Produce
+Deodorant,48,bars,Fresh Produce
+Tea,12,bars,Dairy
+Laundry Detergent,38,bottles,Cleaning
+Shaving Cream,8,cartons,Fresh Produce
+Cheese,47,bars,Dairy
+Orange,49,cans,Cleaning
+Hand Sanitizer,48,cartons,Beverages
+Flour,24,bottles,Frozen
+Shaving Cream,29,grams,Fresh Produce
+Butter,26,cans,Beverages
+Beans,20,cans,Personal Care
+Coffee,30,kilograms,Beverages
+Cheese,18,cans,Frozen
+Moisturizer,22,grams,Cleaning
+Cereal,50,bars,Fresh Produce
+Tofu,25,cartons,Beverages
+Flour,36,grams,Dairy
+Cheese,7,packs,Fresh Produce
+Sugar,24,grams,Grocery
+Tofu,6,kilograms,Cleaning
+Yogurt,44,kilograms,Fresh Produce
+Deodorant,47,boxes,Beverages
+Orange,12,tubes,Cleaning
+Olive Oil,18,liters,Grocery
+Fish,16,bars,Cleaning
+Fish,14,bars,Grocery
+Cereal,33,cans,Grocery
+Onions,2,packs,Grocery
+Flour,39,bottles,Beverages
+Potatoes,47,packs,Frozen
+Coffee,22,boxes,Cleaning
+Shampoo,31,packs,Dairy
+Laundry Detergent,41,kilograms,Cleaning
+Tomatoes,50,packs,Personal Care
+Coffee,15,cartons,Cleaning
+Hand Sanitizer,42,bottles,Fresh Produce
+Beans,25,liters,Dairy
+Onions,4,tubes,Frozen
+Flour,32,packs,Dairy
+Garlic,29,grams,Beverages
+Tomatoes,10,tubes,Personal Care
+Olive Oil,5,kilograms,Beverages
+Butter,10,packs,Personal Care
+Eggs,6,bars,Fresh Produce
+Toilet Paper,9,liters,Fresh Produce
+Pasta,18,bars,Fresh Produce
+Face Wash,8,kilograms,Dairy
+Sugar,6,cartons,Cleaning
+Shaving Cream,19,cans,Dairy
+Potatoes,9,packs,Fresh Produce
+Tea,13,bars,Personal Care
+Yogurt,41,cartons,Cleaning
+Carrots,17,grams,Fresh Produce
+Cereal,11,bottles,Cleaning
+Tea,19,liters,Fresh Produce
+Toilet Paper,27,bottles,Cleaning
+Fish,30,liters,Dairy
+Coffee,45,bottles,Fresh Produce
+Rice,29,kilograms,Personal Care
+Onions,12,bars,Fresh Produce
+Tea,48,tubes,Cleaning
+Shampoo,48,cans,Dairy
+Apple,4,packs,Beverages
+Tomatoes,24,cans,Frozen
+Tomatoes,24,boxes,Personal Care
+Tea,5,boxes,Cleaning
+Tofu,32,kilograms,Grocery
+Onions,47,grams,Grocery
+Potatoes,13,kilograms,Cleaning
+Carrots,7,cartons,Grocery
+Tofu,7,cartons,Grocery
+Rice,49,tubes,Grocery
+Yogurt,1,liters,Frozen
+Deodorant,30,cans,Dairy
+Apple,43,grams,Cleaning
+Spinach,45,cartons,Frozen
+Flour,50,bars,Dairy
+Shrimp,4,cans,Beverages
+Yogurt,49,grams,Frozen
+Dish Soap,11,bars,Dairy
+Hand Sanitizer,15,grams,Personal Care
+Soap,8,kilograms,Grocery
+Soap,20,bottles,Cleaning
+Rice,26,cartons,Grocery
+Tofu,9,bars,Personal Care
+Face Wash,44,cans,Grocery
+Milk,24,boxes,Personal Care
+Shampoo,20,tubes,Grocery
+Toothpaste,43,liters,Beverages
+Bread,22,kilograms,Fresh Produce
+Onions,7,tubes,Frozen
+Dish Soap,39,cartons,Personal Care
+Olive Oil,18,bars,Dairy
+Dish Soap,7,bottles,Fresh Produce
+Cheese,37,liters,Frozen
+Lentils,41,bars,Cleaning
+Rice,4,kilograms,Personal Care
+Pasta,8,grams,Frozen
+Bread,18,bottles,Grocery
+Cereal,2,packs,Dairy
+Salt,20,grams,Personal Care
+Salt,13,cans,Cleaning
+Spinach,28,kilograms,Personal Care
+Dish Soap,42,packs,Personal Care
+Apple,18,bottles,Fresh Produce
+Banana,26,boxes,Cleaning
+Toothpaste,24,packs,Cleaning
+Bread,17,cans,Personal Care
+Fish,12,cartons,Frozen
+Banana,14,bars,Fresh Produce
+Butter,28,packs,Frozen
+Shrimp,49,liters,Dairy
+Sugar,32,grams,Fresh Produce
+Soap,6,tubes,Frozen
+Laundry Detergent,13,tubes,Personal Care
+Carrots,29,kilograms,Beverages
+Cereal,44,bottles,Frozen
+Deodorant,17,tubes,Cleaning
+Soap,30,grams,Grocery
+Coffee,29,liters,Grocery
+Spinach,38,tubes,Grocery
+Shaving Cream,13,tubes,Personal Care
+Shampoo,15,grams,Beverages
+Garlic,42,bars,Fresh Produce
+Apple,38,boxes,Cleaning
+Deodorant,41,cartons,Dairy
+Yogurt,14,cartons,Grocery
+Tofu,28,cans,Dairy
+Banana,39,grams,Cleaning
+Yogurt,9,grams,Personal Care
+Carrots,43,grams,Fresh Produce
+Fish,35,liters,Fresh Produce
+Toothpaste,26,kilograms,Frozen
+Cereal,44,grams,Cleaning
+Bread,41,kilograms,Personal Care
+Deodorant,48,boxes,Grocery
+Eggs,32,kilograms,Beverages
+Soap,47,cans,Personal Care
+Hand Sanitizer,49,liters,Frozen
+Bread,21,cans,Cleaning
+Carrots,37,bottles,Fresh Produce
+Moisturizer,1,grams,Fresh Produce
+Salt,31,bars,Frozen
+Salt,1,tubes,Beverages
+Pasta,13,kilograms,Dairy
+Apple,8,tubes,Dairy
+Cheese,10,boxes,Beverages
+Chicken,31,packs,Grocery
+Tomatoes,27,kilograms,Fresh Produce
+Fish,47,tubes,Grocery
+Banana,22,bars,Personal Care
+Cereal,14,packs,Dairy
+Pasta,45,cartons,Cleaning
+Lentils,47,cans,Grocery
+Bread,2,packs,Fresh Produce
+Carrots,27,tubes,Personal Care
+Coffee,32,bottles,Personal Care
+Garlic,9,packs,Grocery
+Face Wash,17,grams,Cleaning
+Laundry Detergent,2,grams,Frozen
+Tofu,15,bars,Beverages
+Soap,33,liters,Grocery
+Shaving Cream,50,kilograms,Frozen
+Cereal,35,cans,Fresh Produce
+Milk,3,cans,Grocery
+Moisturizer,39,bars,Fresh Produce
+Orange,36,tubes,Grocery
+Tofu,25,packs,Cleaning
+Banana,41,boxes,Beverages
+Shampoo,5,cans,Grocery
+Rice,21,cartons,Fresh Produce
+Onions,30,cartons,Personal Care
+Tomatoes,18,boxes,Dairy
