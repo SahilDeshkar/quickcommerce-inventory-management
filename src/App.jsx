@@ -395,7 +395,7 @@ const App = () => {
           <i className="fas fa-sync-alt logo-icon"></i>
           <h1>InventoryPro</h1>
         </div>
-        <p className="tagline">Smart inventory management for your business</p>
+        <p className="tagline">Smart inventory management for your Home</p>
       </header>
       
       <div className="container">
@@ -460,6 +460,8 @@ const App = () => {
                 <div>
                   <h3>Import Inventory</h3>
                   <p>Upload CSV files to update your inventory data</p>
+                  <p> The csv should have name, quantity,	unit,	category,	orderDate and replenishmentTime
+                  </p>
                 </div>
               </div>
               <div>
