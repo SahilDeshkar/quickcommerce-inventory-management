@@ -18,6 +18,7 @@ const App = () => {
   });
   const [isProcessing, setIsProcessing] = useState(false);
   const [showSuccessAnimation, setShowSuccessAnimation] = useState(false);
+  const [showTooltip, setShowTooltip] = useState(null);
   const fileInputRef = useRef(null);
 
   const handleFileChange = (event) => {
@@ -181,7 +182,7 @@ const App = () => {
           for (const field of possibleFields) {
             const rawValue = order[field];
             if (rawValue !== undefined && rawValue !== '') {
-              const cleanValue = String(rawValue).replace(/[$,]/g, '');
+              const cleanValue = String(rawValue).replace(/[₹$,]/g, '');
               const amount = parseFloat(cleanValue);
               if (!isNaN(amount)) return sum + amount;
             }
@@ -253,7 +254,7 @@ const App = () => {
                 let price = 19.99;
                 for (const field of priceFields) {
                   if (p[field] !== undefined && p[field] !== '') {
-                    const cleanValue = String(p[field]).replace(/[$,]/g, '');
+                    const cleanValue = String(p[field]).replace(/[$₹,]/g, '');
                     const amount = parseFloat(cleanValue);
                     if (!isNaN(amount)) {
                       price = amount;
@@ -325,6 +326,12 @@ const App = () => {
       ...inventoryData,
       cartItems: updatedCart
     });
+
+    // Show feedback to user
+    setShowSuccessAnimation(true);
+    setTimeout(() => {
+      setShowSuccessAnimation(false);
+    }, 1000);
   };
   
   const updateCartItemQuantity = (index, change) => {
@@ -350,8 +357,9 @@ const App = () => {
   const getStockClassName = (stock) => {
     if (stock === 0) return 'out-of-stock';
     if (stock < 10) return 'low-stock';
-    return 'medium-stock';
+    return 'in-stock';
   };
+  
   
   const calculateCartTotal = () => {
     return inventoryData.cartItems.reduce(
@@ -380,6 +388,14 @@ const App = () => {
     fileInputRef.current.click();
   };
 
+  const toggleTooltip = (id) => {
+    if (showTooltip === id) {
+      setShowTooltip(null);
+    } else {
+      setShowTooltip(id);
+    }
+  };
+
   return (
     <div>
       {showSuccessAnimation && (
@@ -392,10 +408,28 @@ const App = () => {
       
       <header>
         <div className="logo">
-          <i className="fas fa-sync-alt logo-icon"></i>
+          <i className="fas fa-shopping-cart logo-icon"></i>
           <h1>InventoryPro</h1>
         </div>
-        <p className="tagline">Smart inventory management for your Home</p>
+        <p className="tagline">Smart inventory management for your home</p>
+        <button className="help-button" onClick={() => toggleTooltip('app-help')}>
+          <i className="fas fa-question-circle"></i>
+        </button>
+        {showTooltip === 'app-help' && (
+          <div className="tooltip-box">
+            <h3>Welcome to InventoryPro!</h3>
+            <p>This app helps you manage your home inventory by:</p>
+            <ul>
+              <li>Tracking your products and stock levels</li>
+              <li>Suggesting items that need to be restocked</li>
+              <li>Creating shopping lists for your next purchase</li>
+            </ul>
+            <p>Get started by uploading a CSV file with your inventory data.</p>
+            <button className="tooltip-close" onClick={() => setShowTooltip(null)}>
+              <i className="fas fa-times"></i>
+            </button>
+          </div>
+        )}
       </header>
       
       <div className="container">
@@ -403,49 +437,65 @@ const App = () => {
           <div className="section-header">
             <i className="fas fa-chart-line"></i>
             <h2>Dashboard Overview</h2>
+            <button className="info-button" onClick={() => toggleTooltip('dashboard-help')}>
+              <i className="fas fa-info-circle"></i>
+            </button>
           </div>
           
+          {showTooltip === 'dashboard-help' && (
+            <div className="info-box">
+              <p>Your dashboard shows key metrics about your inventory at a glance. Monitor your total products, items running low, recent orders, and total revenue.</p>
+              <button className="info-close" onClick={() => setShowTooltip(null)}>
+                <i className="fas fa-times"></i>
+              </button>
+            </div>
+          )}
+          
           <div className="stats-container">
-            <div className="stat-card">
+            <div className="stat-card" title="Total number of products in your inventory">
               <div className="stat-icon-container blue">
                 <i className="fas fa-box"></i>
               </div>
               <div className="stat-info">
                 <h3>Total Products</h3>
                 <div className="stat-value">{isDataLoaded ? inventoryData.totalProducts.toLocaleString() : '0'}</div>
+                <p className="stat-description">All items in your inventory</p>
               </div>
               <div className="stat-indicator blue"></div>
             </div>
             
-            <div className="stat-card">
+            <div className="stat-card" title="Items with less than 10 units in stock">
               <div className="stat-icon-container amber">
                 <i className="fas fa-exclamation-triangle"></i>
               </div>
               <div className="stat-info">
                 <h3>Low Stock</h3>
                 <div className="stat-value">{isDataLoaded ? inventoryData.lowStock : '0'}</div>
+                <p className="stat-description">Items running low on stock</p>
               </div>
               <div className="stat-indicator amber"></div>
             </div>
             
-            <div className="stat-card">
+            <div className="stat-card" title="Orders placed today">
               <div className="stat-icon-container purple">
                 <i className="fas fa-shopping-cart"></i>
               </div>
               <div className="stat-info">
                 <h3>Orders Today</h3>
                 <div className="stat-value">{isDataLoaded ? inventoryData.ordersToday : '0'}</div>
+                <p className="stat-description">Recent purchase orders</p>
               </div>
               <div className="stat-indicator purple"></div>
             </div>
             
-            <div className="stat-card">
+            <div className="stat-card" title="Total revenue from all orders">
               <div className="stat-icon-container green">
-                <i className="fas fa-dollar-sign"></i>
+                <i className="fas fa-rupee-sign"></i>
               </div>
               <div className="stat-info">
                 <h3>Revenue</h3>
-                <div className="stat-value">{isDataLoaded ? `$${inventoryData.revenue.toLocaleString(undefined, {minimumFractionDigits: 2, maximumFractionDigits: 2})}` : '$0.00'}</div>
+                <div className="stat-value">{isDataLoaded ? `₹${inventoryData.revenue.toLocaleString(undefined, {minimumFractionDigits: 2, maximumFractionDigits: 2})}` : '₹0.00'}</div>
+                <p className="stat-description">Total value of orders</p>
               </div>
               <div className="stat-indicator green"></div>
             </div>
@@ -460,8 +510,6 @@ const App = () => {
                 <div>
                   <h3>Import Inventory</h3>
                   <p>Upload CSV files to update your inventory data</p>
-                  <p> The csv should have name, quantity,	unit,	category,	orderDate and replenishmentTime
-                  </p>
                 </div>
               </div>
               <div>
@@ -472,16 +520,40 @@ const App = () => {
                   multiple 
                   onChange={handleFileChange}
                   className="hidden"
+                  aria-label="Upload CSV files"
                 />
                 <button 
                   className="btn btn-primary btn-with-icon"
                   onClick={handleFileButtonClick}
+                  aria-label="Select CSV files to upload"
                 >
                   <i className="fas fa-cloud-upload-alt"></i>
                   Select CSV
                 </button>
+                <button className="info-button" onClick={() => toggleTooltip('csv-format')}>
+                  <i className="fas fa-question-circle"></i>
+                </button>
               </div>
             </div>
+            
+            {showTooltip === 'csv-format' && (
+              <div className="info-box">
+                <h4>CSV Format Guide</h4>
+                <p>Your CSV file should include these columns:</p>
+                <ul className="csv-format-list">
+                  <li><strong>name</strong> - Product name</li>
+                  <li><strong>quantity</strong> - Current stock level</li>
+                  <li><strong>unit</strong> - Unit of measurement (e.g., pcs, kg)</li>
+                  <li><strong>category</strong> - Product category</li>
+                  <li><strong>orderDate</strong> - Last order date (optional)</li>
+                  <li><strong>replenishmentTime</strong> - Days to restock (optional)</li>
+                </ul>
+                <p className="csv-example">Example: Rice,5,kg,Groceries,2023-03-15,7</p>
+                <button className="info-close" onClick={() => setShowTooltip(null)}>
+                  <i className="fas fa-times"></i>
+                </button>
+              </div>
+            )}
             
             {files.length > 0 && (
               <div className="file-list-container">
@@ -499,6 +571,7 @@ const App = () => {
                     <button 
                       className="btn-icon btn-danger" 
                       onClick={() => removeFile(index)}
+                      aria-label={`Remove ${file.name}`}
                     >
                       <i className="fas fa-times"></i>
                     </button>
@@ -510,6 +583,7 @@ const App = () => {
                     className="btn btn-primary btn-with-icon"
                     onClick={processCSVImport}
                     disabled={isProcessing}
+                    aria-label="Process CSV import"
                   >
                     {isProcessing ? (
                       <>
@@ -542,7 +616,26 @@ const App = () => {
             <div className="section-header">
               <i className="fas fa-sync-alt"></i>
               <h2>Recommended Restocking</h2>
+              <button className="info-button" onClick={() => toggleTooltip('restock-help')}>
+                <i className="fas fa-info-circle"></i>
+              </button>
             </div>
+            
+            {showTooltip === 'restock-help' && (
+              <div className="info-box">
+                <p>This table shows items that are running low on stock and should be replenished soon. Items with the lowest stock levels appear first to help you prioritize your purchases.</p>
+                <p>The color indicators show stock status:</p>
+                <ul className="stock-legend">
+                  <li><span className="legend-dot out-of-stock"></span> <strong>Red</strong>: Out of stock (0 units)</li>
+                  <li><span className="legend-dot low-stock"></span> <strong>Amber</strong>: Low stock (1-9 units)</li>
+                  <li><span className="legend-dot medium-stock"></span> <strong>Green</strong>: Adequate stock (10+ units)</li>
+                </ul>
+                <p>Click the "Order" button to add items to your shopping cart.</p>
+                <button className="info-close" onClick={() => setShowTooltip(null)}>
+                  <i className="fas fa-times"></i>
+                </button>
+              </div>
+            )}
             
             <div className="card">
               <div className="recommendations-list">
@@ -582,6 +675,7 @@ const App = () => {
                                 className="btn btn-success btn-with-icon"
                                 onClick={() => addToCart({name: item.name, price: 19.99})}
                                 title="Add to order cart"
+                                aria-label={`Add ${item.name} to cart`}
                               >
                                 <i className="fas fa-plus"></i>
                                 Order
@@ -591,12 +685,20 @@ const App = () => {
                         ))
                       ) : (
                         <tr>
-                          <td colSpan="5" className="empty-state">No recommendations available</td>
+                          <td colSpan="5" className="empty-state">
+                            <i className="fas fa-info-circle"></i>
+                            <p>No recommendations available</p>
+                            <p className="empty-state-help">All your items have adequate stock levels</p>
+                          </td>
                         </tr>
                       )
                     ) : (
                       <tr>
-                        <td colSpan="5" className="empty-state">Import data to see recommendations</td>
+                        <td colSpan="5" className="empty-state">
+                          <i className="fas fa-arrow-up"></i>
+                          <p>Import data to see recommendations</p>
+                          <p className="empty-state-help">Upload a CSV file with your inventory data to get started</p>
+                        </td>
                       </tr>
                     )}
                   </tbody>
@@ -609,7 +711,25 @@ const App = () => {
             <div className="section-header">
               <i className="fas fa-shopping-cart"></i>
               <h2>Order Cart</h2>
+              <button className="info-button" onClick={() => toggleTooltip('cart-help')}>
+                <i className="fas fa-info-circle"></i>
+              </button>
             </div>
+            
+            {showTooltip === 'cart-help' && (
+              <div className="info-box">
+                <p>Your shopping cart contains items you plan to purchase. You can:</p>
+                <ul>
+                  <li>Adjust quantities using the + and - buttons</li>
+                  <li>Remove items by clicking the trash icon</li>
+                  <li>Process your order when you're ready to checkout</li>
+                </ul>
+                <p>The total amount is calculated automatically based on item prices and quantities.</p>
+                <button className="info-close" onClick={() => setShowTooltip(null)}>
+                  <i className="fas fa-times"></i>
+                </button>
+              </div>
+            )}
             
             <div className="card">
               <div className="cart-items">
@@ -618,20 +738,22 @@ const App = () => {
                     <div className="cart-item" key={index}>
                       <div className="item-details">
                         <h4>{item.name}</h4>
-                        <p>${item.price.toFixed(2)} per unit</p>
+                        <p>₹{item.price.toFixed(2)} per unit</p>
                       </div>
                       <div className="item-actions">
                         <div className="quantity-control">
                           <button 
                             className="quantity-btn"
                             onClick={() => updateCartItemQuantity(index, -1)}
+                            aria-label="Decrease quantity"
                           >
                             <i className="fas fa-minus"></i>
                           </button>
-                          <span className="quantity-value">{item.quantity}</span>
+                          <span className="quantity-value" aria-label={`Quantity: ${item.quantity}`}>{item.quantity}</span>
                           <button 
                             className="quantity-btn"
                             onClick={() => updateCartItemQuantity(index, 1)}
+                            aria-label="Increase quantity"
                           >
                             <i className="fas fa-plus"></i>
                           </button>
@@ -639,6 +761,7 @@ const App = () => {
                         <button 
                           className="btn-icon btn-danger"
                           onClick={() => removeCartItem(index)}
+                          aria-label={`Remove ${item.name} from cart`}
                         >
                           <i className="fas fa-trash"></i>
                         </button>
@@ -647,20 +770,33 @@ const App = () => {
                   ))
                 ) : (
                   <div className="empty-cart">
-                    {isDataLoaded ? 'Your cart is empty' : 'Import data to add items to cart'}
+                    {isDataLoaded ? (
+                      <>
+                        <i className="fas fa-shopping-cart cart-empty-icon"></i>
+                        <p>Your cart is empty</p>
+                        <p className="empty-cart-help">Add items from the recommendations list</p>
+                      </>
+                    ) : (
+                      <>
+                        <i className="fas fa-arrow-up"></i>
+                        <p>Import data to add items to cart</p>
+                        <p className="empty-cart-help">Upload a CSV file with your inventory data to get started</p>
+                      </>
+                    )}
                   </div>
                 )}
               </div>
               
               <div className="cart-total">
                 <span>Total:</span>
-                <span>${isDataLoaded ? calculateCartTotal() : '0.00'}</span>
+                <span>₹{isDataLoaded ? calculateCartTotal() : '0.00'}</span>
               </div>
               
               <button 
                 className="btn btn-success btn-large btn-with-icon process-order-btn"
                 disabled={!isDataLoaded || inventoryData.cartItems.length === 0 || isProcessing}
                 onClick={handleProcessOrder}
+                aria-label="Process order"
               >
                 {isProcessing ? (
                   <>
@@ -682,7 +818,11 @@ const App = () => {
                 </div>
                 <div className="saving-item">
                   <i className="fas fa-truck saving-icon"></i>
-                  <span className="saving-text">Free shipping on orders over $50</span>
+                  <span className="saving-text">Free shipping on orders over ₹100</span>
+                </div>
+                <div className="saving-item">
+                  <i className="fas fa-calendar-alt saving-icon"></i>
+                  <span className="saving-text">Guranteed delivery within 15 mins or schedule for later </span>
                 </div>
               </div>
             </div>
@@ -691,7 +831,14 @@ const App = () => {
       </div>
       
       <footer>
-        <p>© 2025 InventoryPro. All rights reserved.</p>
+        <div className="footer-content">
+          <p>© 2025 InventoryPro. All rights reserved.</p>
+          <div className="footer-links">
+            <a href="#" className="footer-link">Privacy Policy</a>
+            <a href="#" className="footer-link">Terms of Service</a>
+            <a href="#" className="footer-link">Help Center</a>
+          </div>
+        </div>
       </footer>
     </div>
   );
